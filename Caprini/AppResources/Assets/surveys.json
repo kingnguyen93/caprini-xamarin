@@ -1,0 +1,408 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Chọn nhóm tuổi",
+    "is_multi":  false,
+    "questions": [
+      {
+        "survey_id": 1,
+        "content": "1-40 tuổi ",
+        "caprini": 0,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 1,
+        "content": "41-60 tuổi",
+        "caprini": 1,
+        "improve": 1.5,
+        "lung": 0
+      },
+      {
+        "survey_id": 1,
+        "content": "61-74 tuổi",
+        "caprini": 2,
+        "improve": 1.5,
+        "lung": 1
+      },
+      {
+        "survey_id": 1,
+        "content": "75-84 tuổi",
+        "caprini": 3,
+        "improve": 1.5,
+        "lung": 1
+      },
+      {
+        "survey_id": 1,
+        "content": ">= 85 tuổi",
+        "caprini": 3,
+        "improve": 3.5,
+        "lung": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Chọn giới tính",
+    "is_multi": false,
+    "questions": [
+      {
+        "survey_id": 2,
+        "content": "Nam",
+        "caprini": 0,
+        "improve": 1,
+        "lung": 0
+      },
+      {
+        "survey_id": 2,
+        "content": "Nữ",
+        "caprini": 0,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 3,
+        "content": "Mổ thay khớp kháng hoặc khớp gối trong tháng vừa qua",
+        "caprini": 5,
+        "improve": 0,
+        "lung": 2
+      },
+      {
+        "survey_id": 3,
+        "content": "Gãy xương hông, xương chậu, hay gãy chân trong tháng vừa qua",
+        "caprini": 5,
+        "improve": 0,
+        "lung": 2
+      },
+      {
+        "survey_id": 3,
+        "content": "Chấn thương nghiêm trọng (gãy nhiều xương do té ngã hay tai nạn giao thông) trong tháng vừa qua",
+        "caprini": 5,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 4,
+        "content": "Chấn thương tủy sống gây liệt trong tháng vừa qua",
+        "caprini": 5,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 4,
+        "content": "Bị đột quỵ trong tháng vừa qua",
+        "caprini": 5,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 4,
+        "content": "Có kế hoạch tiểu phẫu với thời gian tiểu phẫu dưới 45 phút",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 4,
+        "content": "Đã trải qua phẫu thuật kéo dài hơn 45 phút trong tháng vừa qua",
+        "caprini": 2,
+        "improve": 0,
+        "lung": 2
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 5,
+        "content": "Giãn tĩnh mạch có thể nhìn thấy",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 5,
+        "content": "Có tiền sử bệnh viêm đường ruột (ví dụ bệnh Crohn hoặc viêm loét đại tràng)",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 5,
+        "content": "Sưng chân (hiện tại)",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 6,
+        "content": "Thừa cân hoặc béo phì (BMI >25)",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 6,
+        "content": "Nhồi máu cơ tim trong tháng vừa qua",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 6,
+        "content": "Suy tim ứ huyết trong tháng vừa qua",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 7,
+        "content": "Nhiễm khuẩn nặng (ví dụ viêm phổi) trong tháng vừa qua",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 7,
+        "content": "Bệnh phổi (khí phế thũng hoặc COPD) trong tháng vừa qua",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 7,
+        "content": "Nghỉ ngơi tại giường, hạn chế vận động, mang nẹp chân dưới 72 giờ trong tháng vừa qua",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 8,
+        "content": "Có bệnh ác tính trước đây hoặc hiện nay (trừ ung thư da loại không hắc tố)",
+        "caprini": 2,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 8,
+        "content": "Có kế hoạch đại phẫu kéo dài hơn 45 phút (kể cả mổ nội soi ổ bụng và nội soi khớp)",
+        "caprini": 2,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 8,
+        "content": "Bó bột/đặt máng bột không tháo được để bất động chân trong tháng vừa qua",
+        "caprini": 2,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 9,
+        "content": "Đặt ống dây ở tĩnh mạch cổ hoặc ngực để truyền máu hoặc thuốc trực tiếp vào tim (đường truyền tĩnh mạch trung tâm) trong tháng vừa qua",
+        "caprini": 2,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 9,
+        "content": "Nằm liệt giường 72 giờ hoặc lâu hơn",
+        "caprini": 2,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 10,
+        "content": "Tiền sử bản thân đã bị huyết khối tĩnh mạch sâu hoặc tắc động mạch phổi",
+        "caprini": 3,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 10,
+        "content": "Tiền sử cá nhân hoặc gia đình xét nghiệm máu dương tính cho thấy tăng nguy cơ đông máu",
+        "caprini": 3,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 10,
+        "content": "Tiền sử bệnh viên đường ruột",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 11,
+        "content": "Sử dụng thuốc tránh thai hoặc liệu pháp hormon thay thế (HRT)",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 11,
+        "content": "Có thai hoặc  mới sinh con trong tháng vừa qua",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      },
+      {
+        "survey_id": 11,
+        "content": "Tiền sử thai chết lưu, sảy thai tự nhiên tái diễn (>3 lần), sinh non kèm nhiễm độc thai nghén hoặc con chậm tăng trưởng",
+        "caprini": 1,
+        "improve": 0,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 12,
+        "content": "Loét dạ dày tá tràng tiến triển",
+        "caprini": 0,
+        "improve": 4.5,
+        "lung": 0
+      },
+      {
+        "survey_id": 12,
+        "content": "Chảy máu trong vòng 3 tháng trước nhập viện",
+        "caprini": 0,
+        "improve": 4,
+        "lung": 0
+      },
+      {
+        "survey_id": 12,
+        "content": "Số lượng tiểu cầu nhỏ hơn 50 x 10ᶺ9/1",
+        "caprini": 0,
+        "improve": 4,
+        "lung": 0
+      },
+      {
+        "survey_id": 12,
+        "content": "Suy gan (INR > 1.5)",
+        "caprini": 0,
+        "improve": 2.5,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 13,
+        "content": "Suy thận nặng (MLCT nhỏ hơn 30ml/phút/1.73m²)",
+        "caprini": 0,
+        "improve": 2.5,
+        "lung": 0
+      },
+      {
+        "survey_id": 13,
+        "content": "Đang điều trị tại khoa hồi sức tích cực",
+        "caprini": 0,
+        "improve": 2.5,
+        "lung": 0
+      },
+      {
+        "survey_id": 13,
+        "content": "Catheter tĩnh mạch trung tâm",
+        "caprini": 0,
+        "improve": 2,
+        "lung": 0
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Kiểm tra tất cả các câu hỏi áp dụng cho bạn",
+    "is_multi": true,
+    "questions": [
+      {
+        "survey_id": 14,
+        "content": "Bệnh thấp khớp",
+        "caprini": 0,
+        "improve": 2,
+        "lung": 0
+      },
+      {
+        "survey_id": 14,
+        "content": "Đang bị ung thư",
+        "caprini": 0,
+        "improve": 2,
+        "lung": 0
+      },
+      {
+        "survey_id": 14,
+        "content": "Suy thận trung bình (MLCT 30 - 59 ml/phút/1.73m²)",
+        "caprini": 0,
+        "improve": 1,
+        "lung": 0
+      }
+    ]
+  }
+]

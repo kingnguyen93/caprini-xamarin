@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Caprini.Views.SurveyResultPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Caprini.ViewModels"
+    Title="{Binding Title}"
+    x:DataType="vm:SurveyResultViewModel"
+    mc:Ignorable="d">
+    <StackLayout>
+        <Grid
+            Padding="10"
+            ColumnSpacing="10"
+            HorizontalOptions="FillAndExpand"
+            RowSpacing="10"
+            VerticalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height=".5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height=".5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height=".5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height=".5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height=".5" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                FontSize="14"
+                Text="Điểm Caprini:"
+                TextColor="{StaticResource Primary}"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                FontSize="14"
+                Text="{Binding TotalCaprini, StringFormat='{0:N2}'}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            <BoxView
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                BackgroundColor="LightGray"
+                HeightRequest=".5" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                FontSize="14"
+                Text="Nguy cơ:"
+                TextColor="{StaticResource Primary}"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                FontSize="14"
+                Text="{Binding CapriniResult}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            <BoxView
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                BackgroundColor="LightGray"
+                HeightRequest=".5" />
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                FontSize="14"
+                Text="Tỉ lệ HKTMS:"
+                TextColor="{StaticResource Primary}"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="4"
+                Grid.Column="1"
+                FontSize="14"
+                Text="{Binding CapriniRate}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            <BoxView
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                BackgroundColor="LightGray"
+                HeightRequest=".5" />
+            <Label
+                Grid.Row="6"
+                Grid.Column="0"
+                FontSize="14"
+                Text="Tỉ lệ tắc mạch phổi:"
+                TextColor="{StaticResource Primary}"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="6"
+                Grid.Column="1"
+                FontSize="14"
+                Text="{Binding LungeRate}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            <BoxView
+                Grid.Row="7"
+                Grid.ColumnSpan="2"
+                BackgroundColor="LightGray"
+                HeightRequest=".5" />
+            <Label
+                Grid.Row="8"
+                Grid.Column="0"
+                FontSize="14"
+                Text="Điểm Improve:"
+                TextColor="{StaticResource Primary}"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="8"
+                Grid.Column="1"
+                FontSize="14"
+                Text="{Binding ImproveRate}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            <BoxView
+                Grid.Row="9"
+                Grid.ColumnSpan="2"
+                BackgroundColor="LightGray"
+                HeightRequest=".5" />
+            <Label
+                Grid.Row="10"
+                Grid.Column="0"
+                FontSize="14"
+                Text="Phương án:"
+                TextColor="{StaticResource Primary}"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="10"
+                Grid.Column="1"
+                FontSize="14"
+                Text="{Binding Plan}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+        </Grid>
+
+        <Grid Margin="20,0,20,20" HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Button
+                Grid.Column="0"
+                Padding="0"
+                BackgroundColor="LightGray"
+                Command="{Binding PreviousCommand}"
+                HeightRequest="40"
+                Text="Quay lại"
+                TextColor="Black" />
+            <Button
+                Grid.Column="1"
+                Padding="0"
+                BackgroundColor="{StaticResource Primary}"
+                Command="{Binding NewSurveyCommand}"
+                HeightRequest="40"
+                Text="Khảo sát mới"
+                TextColor="White" />
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Caprini.Views.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Caprini.ViewModels"
+    Title="{Binding Title}"
+    x:DataType="vm:HomeViewModel"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout
+        Padding="16,40,16,40"
+        Spacing="10"
+        VerticalOptions="CenterAndExpand">
+        <Label
+            FontSize="16"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Text="Điểm số về nguy cơ huyết khối tĩnh mạch sâu (DVT) đã được xác nhận bởi 2.790.027 bệnh nhân tại Việt Nam năm 2017-2018 và được chuẩn hoá theo mô hình Caprini."
+            TextType="Html" />
+        <Button
+            Margin="0,20,0,0"
+            BackgroundColor="{StaticResource Primary}"
+            Command="{Binding StartSurveyCommand}"
+            Text="Bắt đầu khảo sát"
+            TextColor="White" />
+    </StackLayout>
+</ContentPage>

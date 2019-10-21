@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Caprini.Views.SurveyPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:m="clr-namespace:Caprini.Models"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Caprini.ViewModels"
+    Title="{Binding Title}"
+    x:DataType="vm:SurveyViewModel"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:SurveyViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <StackLayout
+            Padding="10"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Label
+                FontSize="18"
+                HorizontalOptions="CenterAndExpand"
+                LineBreakMode="NoWrap"
+                Text="{Binding CurrentSurvey.Name}"
+                TextColor="Black" />
+            <StackLayout
+                Margin="0,20,0,0"
+                BindableLayout.ItemsSource="{Binding CurrentSurvey.Questions}"
+                Spacing="10">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="m:Question">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    FontSize="14"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{Binding Content}"
+                                    TextColor="Black"
+                                    VerticalOptions="Center" />
+                                <Switch IsToggled="{Binding Selected}" VerticalOptions="Center" />
+                            </StackLayout>
+                            <BoxView BackgroundColor="LightGray" HeightRequest=".5" />
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </StackLayout>
+
+        <Grid Margin="20,0,20,20" HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Button
+                Grid.Column="0"
+                Padding="0"
+                BackgroundColor="LightGray"
+                Command="{Binding PreviousCommand}"
+                HeightRequest="40"
+                IsVisible="{Binding PreviousVisible}"
+                Text="Quay lại"
+                TextColor="Black" />
+            <Button
+                Grid.Column="1"
+                Padding="0"
+                BackgroundColor="{StaticResource Primary}"
+                Command="{Binding NextCommand}"
+                HeightRequest="40"
+                IsVisible="{Binding NextVisible}"
+                Text="{Binding NextText}"
+                TextColor="White" />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

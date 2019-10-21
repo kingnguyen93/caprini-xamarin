@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Caprini.Views.InfoPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Caprini.ViewModels"
+    Title="{Binding Title}"
+    x:DataType="vm:InfoViewModel"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:InfoViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="16,40,16,40" VerticalOptions="CenterAndExpand">
+        <Label
+            FontSize="14"
+            HorizontalOptions="Center"
+            Text="Chỉ có bác sĩ mơi có thể xách định nguy cơ mắc huyết khối tĩnh mạch sâu (DVT: cục máu hình thành ở một trong những tĩnh mạch sâu). Việc đánh giá tiền sử các bệnh mắc trước phẫu thuật và sức khoẻ hiện tại có thể xác định nguy cơ mắc DVT."
+            TextType="Html" />
+        <Label
+            FontSize="14"
+            HorizontalOptions="Center"
+            Text="Tuy nhiên, ông/bà/anh/chị có thể dành một chút thời gian để đánh giá nguy cơ này cho chính mình (hoặc người thân). Cuộc khảo sát sẽ cho biết điểm dự báo nguy cơ mắc DVT, có thể trao đổi với bác sĩ để thảo luận về rủi ro này và thực hiện các biện pháp dự phòng."
+            TextType="Html" />
+    </StackLayout>
+
+</ContentPage>

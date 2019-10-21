@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Caprini.Views.LinkPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Caprini.ViewModels"
+    Title="{Binding Title}"
+    x:DataType="vm:LinkViewModel"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:LinkViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView
+        Padding="16,20"
+        VerticalOptions="CenterAndExpand"
+        VerticalScrollBarVisibility="Never">
+        <StackLayout>
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Ông/bà/anh/chị vui lòng truy cập để biết thêm thông tin và tham gia phát triển hệ thống này ở các bệnh viện"
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                Text="TÀI LIỆU THAM KHẢO"
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="1. Shi J, Ye J, Zhuang X (2018) Application value of Caprini risk assessment model and elevated tumor-specific D-dimer level in predicting postoperative venous thromboembolism for patients undergoing surgery of gynecologic malignancies. J Obstet Gynaecol Res, doi: 10.1111/jog.13832."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="2. Li Q, Ba T, Wang LF (2018) Stratification of venous thromboembolism risk in burn patients by Caprini score. Burns. pii: S 0305-4179 (18) 30691-0. doi: 10.1016/j.burns."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="3. Fu Y, Liu Y, Chen S (2018) The combination of Caprini risk assessment scale and thrombotic biomarkers to evaluate the risk of venous thromboembolism in critically ill patients. Medicine (Baltimore). 97(47):e13232."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="4. Laws A, Anderson K (2018) Implementation of a Venous Thromboembolism Prophylaxis Protocol Using the Caprini Risk Assessment Model in Patients Undergoing Mastectomy. Ann Surg Oncol. 25 (12):3548-3555."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="5. Caprini JA (2010). Individual risk assessment is the best strategy for thromboembolic prophylaxis. Dis Mon.56: 552–9."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="6. Pannucci CJ, Bailey SH, Dreszer G, et al. (2011) Validation of the Caprini risk assessment model in plastic and reconstructive surgery patients. J Am Coll Surg.212:105–12."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="7. Pannucci, C.J., Obi, A., Alvarez, R., Abdullah, N., Nackashi, A., Hu, H.M. et al (2014). Inadequate venous thromboembolism risk stratification predicts venous thromboembolic events in surgical intensive care unit patients. J Am Coll Surg. 218: 898–904."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="8. Gharaibeh, L., Albsoul Younes, A., and Younes, N. (2015) Evaluation of venous thromboembolism prophylaxis after the introduction of an institutional guideline: extent of application and implementation of its recommendations. J Vasc Nurs. 33: 72–78."
+                TextType="Html" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Caprini.Views.AboutPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Caprini.ViewModels"
+    Title="{Binding Title}"
+    x:DataType="vm:AboutViewModel"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView
+        Padding="16,20"
+        VerticalOptions="CenterAndExpand"
+        VerticalScrollBarVisibility="Never">
+        <StackLayout>
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Thông tin về huyết khối tĩnh mạch sâu (DVT)"
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Ông/bà/anh/chị có nguy cơ bị huyết khối tĩnh mạch sâu không?"
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Người cao tuổi, béo phì, hút thuốc, tăng huyết áp, ung thư, mất nước, bất động, giãn tĩnh mạch chi dưới, mang thai và dùng thuốc tránh thai đều là những yếu tố nguy cơ mắc DVT đe dọa đến tính mạng và có thể dẫn đến tử vong nhiều hơn so với ung thư vú và AIDS."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Huyết khối tĩnh mạch sâu (DVT) đe dọa gần 10.000 người Việt Nam mỗi năm. Tuy nhiên, ít người có kiến thức về các dấu hiệu và các triệu chứng của DVT. DVT xảy ra khi cục máu đông hình thành ở một trong những tĩnh mạch lớn, thường ở chân, dẫn đến tắc nghẽn quá trình lưu thông máu hoàn toàn hoặc một phần. Nếu không được điều trị, cục máu đông này có khả năng di chuyển lên phổi và gây ra tắc động mạch phổi. Đây là một tình trạng cấp cứu có thể đe dọa đến tính mạng."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Tuy DVT có thể dự phòng được nhưng vẫn có gần 300.000 người Mỹ tử vong hàng năm do biến chứng chính là tắc động mạch phổi."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Nếu phát hiện và chẩn đoán kịp thời, DVT hoàn toàn có thể điều trị được. Các dấu hiệu điển hình của DVT ở chi dưới là sưng, đau và đỏ hoặc đổi màu da. Tuy nhiên, khoảng một nửa số ca DVT không hề có triệu chứng và khi xuất hiện các triệu chứng của tắc mạch phổi thì đã quá muộn để người bệnh được cấp cứu. Các triệu chứng điển hình của tắc động mạch phổi là: khó thở, mạch nhanh, vã mồ hôi, đau ngực dữ dội, ho ra máu, huyết áp thấp hoặc không đo được."
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Việc đầu tiên và quan trọng nhất trong dự phòng và giảm thiểu nguy cơ  tử vong do DVT là phải đánh giá được nguy cơ mắc DVT. "
+                TextType="Html" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Hãy có trách nhiệm với sức khỏe của mình và cùng bác sĩ theo dõi về các yếu tố nguy cơ để có thể dự phòng huyết khối trong tương lai."
+                TextType="Html" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
